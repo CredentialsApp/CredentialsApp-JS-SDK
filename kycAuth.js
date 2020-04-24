@@ -3,7 +3,7 @@
 
   var auth_button = document.getElementById(trust_id_auth);
   var auth_params = {
-    license_key:        'XXXXX-XXXXX-XXXXX-XXXXX', // place your business license here
+    license_key:   'XXXXX-XXXXX-XXXXX-XXXXX', // place your business license here
     scope:         {biometrics: ["given_name","nationality","gender","document_number"], version: 1},
     callback_url:  'https://example.com/callback/' // place callback url here
   };
@@ -15,6 +15,7 @@
   function authReq(options) {
 	
     var dynamic_link = 'https://trustid.page.link/?link=https://trust-id.co/resolve/'
+    
             + stringToHex('?license_key=' + options.license_key)
             + stringToHex('&scope=' + options.scope.biometrics)
             + stringToHex('&callback_url=' + options.callback_url)
@@ -28,7 +29,6 @@
 	  
             window.location = url;
   }
-
 
 function stringToHex (tmp) {
     var str = '',
