@@ -20,7 +20,7 @@
     
             + stringToHex('?license_key=' + options.license_key)
             + stringToHex('&scope=' + options.scope.biometrics)
-            + stringToHex('&signing_hash=') + options.signing_hash
+            + stringToHex('&signing_hash=' + options.signing_hash)
             + stringToHex('&callback_url=' + options.callback_url)
 
             + '&apn=com.gatepay.trustid&efr=1&ibi=com.gatepay.trustid&isi=MV47TP9PRQ'
