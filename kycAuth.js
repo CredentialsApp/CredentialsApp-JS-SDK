@@ -9,10 +9,10 @@
   };
 
   auth_button.addEventListener('click', function() {
-      kycAuth(auth_params);
+      authReq(auth_params);
   }, false);
 
-  function kycAuth(options) {
+  function authReq(options) {
 	
     var dynamic_link = 'https://trustid.page.link/?link=https://trust-id.co/resolve/'
             + stringToHex('?license_key=' + options.license_key)
