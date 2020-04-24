@@ -6,7 +6,7 @@
   var auth_params = {
     license_key:   'XXXXX-XXXXX-XXXXX-XXXXX', // place your business license here
     scope:         {biometrics: ["given_name","nationality","gender","document_number"], version: 1},
-    signing_hash:  makeRandomHash(64),
+    signing_hash:  generateRandomHash(64),
     callback_url:  'https://example.com/callback/' // place callback url here
   };
 
@@ -46,7 +46,7 @@ function stringToHex (tmp) {
     return str;
 }
 
-function makeRandomHash(length) {
+function generateRandomHash(length) {
    var result           = '';
    var characters       = 'abcdef0123456789';
    var charactersLength = characters.length;
