@@ -25,7 +25,7 @@
 
             + '&apn=com.gatepay.trustid&efr=1&ibi=com.gatepay.trustid&isi=MV47TP9PRQ'
     
-    window.location = url;
+    window.location = dynamic_link;
   }
 
 function stringToHex (tmp) {
