@@ -25,12 +25,7 @@
 
             + '&apn=com.gatepay.trustid&efr=1&ibi=com.gatepay.trustid&isi=MV47TP9PRQ'
     
-    openDeepLink(dynamic_link);
-  }
-    
-  function openDeepLink(url) {
-	  
-            window.location = url;
+    window.location = url;
   }
 
 function stringToHex (tmp) {
