@@ -1,7 +1,7 @@
 <button id="trust_id_auth">Verify via TrustID</button> 
   <script>
 
-  var auth_button = document.getElementById(trust_id_auth);
+  var auth_button = document.getElementById("trust_id_auth");
 
   var auth_params = {
     license_key:   'XXXXX-XXXXX-XXXXX-XXXXX', // place your business license here
