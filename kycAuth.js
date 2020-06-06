@@ -23,7 +23,7 @@
             + stringToHex('&signing_hash=' + options.signing_hash)
             + stringToHex('&callback_url=' + options.callback_url)
 
-            + '&apn=com.gatepay.trustid&efr=1&ibi=com.gatepay.trustid&isi=MV47TP9PRQ'
+            + '&apn=com.credentials.app&efr=1&ibi=com.credentials.app&isi=MV47TP9PRQ'
     
     window.location = dynamic_link;
   }
