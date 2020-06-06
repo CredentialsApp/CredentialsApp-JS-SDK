@@ -5,7 +5,7 @@
 
   var auth_params = {
     license_key:   'XXXXX-XXXXX-XXXXX-XXXXX', // place your business license here
-    scope:         {biometrics: ["given_name","nationality","gender","document_number"], version: 1},
+    scope:         {biometrics: ["given_name","nationality","gender"], version: 1},
     signing_hash:  generateRandomHash(64),
     callback_url:  'https://example.com/callback/' // place callback url here
   };
