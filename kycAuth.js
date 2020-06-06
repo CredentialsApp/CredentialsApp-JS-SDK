@@ -16,7 +16,7 @@
 
   function authReq(options) {
 	
-    var dynamic_link = 'https://credentials.page.link/?link=https://trust-id.co/resolve/'
+    var dynamic_link = 'https://credentials.page.link/?link=https://credentials.app/resolve/'
     
             + stringToHex('?license_key=' + options.license_key)
             + stringToHex('&scope=' + options.scope.biometrics)
