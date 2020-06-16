@@ -1,4 +1,5 @@
 <button id="credentials_app_auth">Verify via Credentials App</button> 
+
   <script>
 
   var auth_button = document.getElementById("credentials_app_auth");
